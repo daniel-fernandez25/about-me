@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Permanent Marker";
+  src: url(./fonts/PermanentMarker.ttf) format("truetype"),
+    url(./fonts/PermanentMarker.woff) format("woff");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: url(./fonts/Inter.ttf) format("truetype");
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+a {
+  margin: 0;
+  font-size: 100%;
+  font-weight: normal;
+}
+
+* {               /*this * means that this is going to be applied to all of the elements */
+  box-sizing: border-box;
+}     /*border-box is to count padding and border inside the w and h of the element*/
+
+.page {
+  font-family: "Inter", sans-serif;
+  background: #eeeeee;
+}
+
+.header {
+  height: 100vh;
+  text-align: center; /*aligning the text*/
+  background-image: url(./images/cover.jpg); /* added here to avoid being overshadowed */
+  background-size: cover;     /*make the whole image fit the content size*/
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.header-title{
+  font-family:"Permanent Maker", cursive; /* defines font*/
+  font-size: 140px;
+  line-height: 140px;
+  color:white;
+  text-transform: uppercase;
+  max-width: 1240px; /*limits the width of the content in this case text*/
+  margin: auto; /*centers the content in height and width*/
+}
+
+.overlay {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+}
+
+.content {
+  display: flex;
+  flex-wrap: wrap;/*send elements to the next line when there's no enough space*/
+  justify-content: space-between; /*evenly distributes elements in the container available space*/
+  max-width: 790px;
+  margin: 100px auto 50px;
+}
+
+.card{
+  width: 350px;
+  margin-bottom: 60px;
+  padding: 45px 45px 70px;
+  background: #ffffff;
+  box-shadow: 4px 4px 5px rgba(0, 132, 255, 0.4);
+}
+
+.card-title{
+  font-family: "Permanent Marker", cursive;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-text{
+  font-size: 16px;
+}
+
+.card-image{
+  width: 100%;
+  margin-bottom: 25px;
+}
+
+.footer {
+  display: flex;
+  min-height: 300px;
+  background-color: #000000;
+}
+
+.footer-text{
+  font-size: 24 px;
+  color: #ffffff;
+  margin: auto;
+}
+/* agregar una regla CSS para la firma del pie de página */

@@ -93,9 +93,29 @@ a {
   background-color: #000000;
 }
 
-.footer-text{
+/*.footer-text{
   font-size: 24 px;
   color: #ffffff;
   margin: auto;
+  margin-right: 0;
 }
-/* agregar una regla CSS para la firma del pie de página */
+
+.github-link{
+  filter: invert(1);
+  transition: filter 0.3s;
+  margin: auto;
+  margin-left: 20px;
+}*/
+.container{
+  margin: auto;
+  display: flex;
+}
+
+.footer-content{
+  display: flex;
+  filter: invert(1);
+  transition: filter 0.3s;
+  justify-content: space-between;
+  margin: 8px;
+  align-items: center;
+}
